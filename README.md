@@ -48,7 +48,12 @@ Porf. Li‐Pin, Chang National Chiao‐Tung University
 - Implement a subset of the “find” command
     - Finding files by name, inode #, and file size
     - **Recursively descending** into sub‐directories to find all matches
-## Programming Assignment #2
-### 
-#### 
-- 
+    
+## Programming Assignment #7
+### File Fragmentation Reproduction
+#### File fragmentation
+- Ideally, a file is allocated in contiguous disk space
+    - File system ages after it undergoes a number of allocation and de‐allocation requests
+    - Free space become fragmented
+    - It is difficult for an aged file system to allocate contiguous disk space for a new file or an existing to grow
+- File fragmentation increase the disk positioning overhead
